@@ -1,0 +1,8 @@
+Options -Indexes
+
+# Bloqueia acesso direto ao diretório data/ caso o servidor sirva fora de public/
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
