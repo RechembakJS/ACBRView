@@ -107,7 +107,7 @@
           <input
             id="busca"
             type="search"
-            placeholder="Buscar por nome, UF, provedor ou URL…"
+            placeholder="Buscar por nome do município ou provedor…"
             class="w-full pl-9 pr-9 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-slate-400 transition"
             x-model="busca"
             @input.debounce.250ms="aplicarFiltro()"
